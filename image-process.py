@@ -21,4 +21,9 @@ img = cv2.imread('image.jfif',1)
    [[0,0,0],[255,255,255]]
    ]
    where 4 pixels exist, 2 black and 2 white"""
+
 print(img.shape)
+
+"""first [] --> denotes image
+   interior [] --> rows
+   most interior []---> column pixel values inside each row"""
