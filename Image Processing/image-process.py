@@ -40,3 +40,15 @@ for i in range(100):
 cv2.imshow("Image",img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+
+
+
+#superimpose two images
+img2 = cv2.imread("myafce.jpg",-1)
+
+#in opencv the area on which image is to be superimposed must be = dimensions of image being superimposed
+img[5:168,230:417] = img2
+cv2.imshow("Image",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
