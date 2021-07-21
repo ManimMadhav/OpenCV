@@ -14,5 +14,11 @@ img = cv2.imread('image.jfif',1)
 """[0,0,0] denotes a black pixel
    and [255,255,255] denotes a white pixel"""
 
-#returns a 3-D array
+"""each image is represented by 3-D arrays
+   a 2px x 2px image can be represented as:
+   [
+   [[0,0,0],[255,255,255]]
+   [[0,0,0],[255,255,255]]
+   ]
+   where 4 pixels exist, 2 black and 2 white"""
 print(img.shape)
