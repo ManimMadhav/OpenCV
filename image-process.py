@@ -22,7 +22,9 @@ img = cv2.imread('image.jfif',1)
    ]
    where 4 pixels exist, 2 black and 2 white"""
 
-#returns 3 values, [height,width,channels]
+"""returns 3 values, [height,width,channels]
+   channels is number of values that denote a pixel"""
+
 print(img.shape)
 
 #returns 3-D numpy darray containing all pixels of the image
