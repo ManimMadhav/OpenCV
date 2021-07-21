@@ -10,7 +10,9 @@ while True:
     height = int(capture.get(4))
 
     image = np.zeros(frame.shape, np.uint8)
-
+    
+    #each quarter_frame creates another resized frame of you
+    #then the frame shows you, four times!
     quarter_frame = cv2.resize(frame, (0,0), fx=0.5,fy=0.5)
     image[:height//2, :width//2] = quarter_frame
     image[height//2:, :width // 2] = quarter_frame
