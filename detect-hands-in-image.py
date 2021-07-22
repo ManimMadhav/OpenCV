@@ -1,5 +1,5 @@
 #detecting hands with mediapipe
-
+#using google's pre-made ML algos in mediapipe
 import cv2
 import mediapipe as mp
 
@@ -13,3 +13,8 @@ results = hands.process(imgRGB)
 
 for handlms in results.multi_hand_landmarks:
     drawTools.draw_landmarks(img,handlms, mpHands.HAND_CONNECTIONS)
+  
+print(results.multi_hand_landmarks)
+cv2.imshow("hands",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
